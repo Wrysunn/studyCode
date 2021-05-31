@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.min.js"></script>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    list-style: none;
+  }
+  .nav{
+    margin: 100px 100px;
+  }
+  .nav>li {
+    float: left;
+  }
+  .nav li a{
+    display: block;
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+    color: #333;
+    line-height: 40px;
+    text-align: center;
+  }
+  .nav li a:hover{
+    background-color: #e1e1e1;
+  }
+  .nav ul{
+    display: none;
+  }
+  .nav ul li{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid orange;
+    border-top: 0;
+    margin-left: -1px;
+  }
+  .nav ul li:hover{
+    background-color: orange;
+  }
+</style>
+<body>
+  <ul class="nav">
+    <li>
+      <a href="#" id="a1">微博</a>
+      <ul>
+        <li>@我</li>
+        <li>聊天</li>
+        <li>私信</li>
+      </ul>
+    </li>
+    <li>
+      <a href="#" id="a1">微博</a>
+      <ul>
+        <li>@我</li>
+        <li>聊天</li>
+        <li>私信</li>
+      </ul>
+    </li>
+    <li>
+      <a href="#" id="a1">微博</a>
+      <ul>
+        <li>@我</li>
+        <li>聊天</li>
+        <li>私信</li>
+      </ul>
+    </li>
+    <li>
+      <a href="#" id="a1">微博</a>
+      <ul>
+        <li>@我</li>
+        <li>聊天</li>
+        <li>私信</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+<script>
+  // 原生部分
+  // var nav = document.querySelector(".nav");
+  // var lis  = nav.children;
+  // for(var i = 0 ; i<lis.length; i++){
+  //   lis[i].onmouseover = function(){
+  //     this.children[1].style.display = 'block';
+  //   }
+  //   lis[i].onmouseout = function(){
+  //     this.children[1].style.display = 'none';
+  //   }
+  // }
+
+
+  // jQuery部分
+    // $(function(){
+    //   $(".nav>li").mouseover(function(){
+    //     $(this).children("ul").show();
+    //   });
+    //   $(".nav>li").mouseout(function(){
+    //     $(this).children("ul").hide()
+    //   });
+    // })
+
+    // $(function(){
+    //   $(".nav>li").hover(function(){
+    //     $(this).children("ul").stop().slideToggle(1000);
+    //   })
+    // })
+</script>
+</html>
