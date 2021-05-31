@@ -1,0 +1,116 @@
+.nav{
+  overflow: hidden;
+}
+.sk{
+  position: absolute;
+  left: 190px;
+  top: 40px;
+  border-left: 1px solid #b3181c;
+}
+.sk_list ul li{
+  float: left;
+
+}
+.sk_list ul li a{
+  padding: 0 30px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  line-height: 47px;
+}
+.sk_con ul li{
+ float: left;
+
+}
+.sk_con ul li a{
+  display: block;
+  line-height: 49px;
+  font-size: 14px;
+  padding: 0 20PX;
+}
+.sk_con ul li:last-child a::after{
+  content: '\e91e';
+  font-family: 'icomoon';
+}
+.sk_bd ul li{
+  float: left;
+  width: 290px;
+  height: 460px;
+  border: 1px solid transparent;
+  overflow: hidden;
+  margin-right:13px;
+  margin-top: 1px;
+}
+.sk_bd ul li:nth-child(4n){
+  margin-right:0;
+}
+.sk_bd ul li:hover{
+  border: 1px solid #b3181c;
+
+}
+.side {
+  width: 290px;
+  height: 460px;
+  margin: 30px auto;
+  /* background-color: red; */
+}
+.side img {
+  width: 100%;
+}
+.side h3 {
+  margin: 5px;
+  font-weight: 400;
+  margin: 0 16px 5px;
+}
+.side .p1 {
+  color: red;
+  font-size: 16px;
+}
+.side .span1 {
+  text-decoration: line-through;
+  color: #777;
+}
+.side p {
+  margin: 0 16px 5px;
+
+}
+.side .sell {
+  margin: 0 16px;
+}
+.side .red {
+  float: left;
+  background-color: red;
+  width: 69px;
+  height: 15px;
+  border-radius: 7px 0 0 7px;
+}
+.side .span2 {
+  float: left;
+}
+.side .span3 {
+  float: left;
+}
+.side i {
+  font-style: normal;
+  color: red;
+}
+.side .red1{
+  float: left;
+  margin-left: 4px;
+  margin-right: 4px;
+  height: 16px;
+  border: 1px solid red;
+  border-radius: 8px;
+  width: 100px;
+}
+.side a{
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  margin-top: 6px;
+  color: white;
+}

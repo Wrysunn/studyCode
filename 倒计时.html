@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		div {
+			float: left;
+			width: 30px;
+			height: 30px;
+			background: #000;
+			color: #fff;
+			margin: 100px auto;
+			margin-left: 10px;
+			text-align: center;
+			line-height: 30px;
+		}
+	</style>
+	<body>
+		<div class="h">1</div>
+		<div class="m">2</div>
+		<div class="s">3</div>
+	</body>
+	<script>
+		var hours = document.querySelector('.h');
+		var min = document.querySelector('.m');
+		var second = document.querySelector('.s');
+		var inputTime = +new Date('2021-5-14 02:00:00');
+    countTime()
+		setInterval(countTime, 1000);
+		function countTime() {
+			var nowTime = +new Date();
+			var times = (inputTime - nowTime) / 1000;
+			var h = parseInt(times / 60 / 60 % 24);
+			h = h < 10 ? '0' + h : h;
+			hours.innerHTML = h;
+			var m = parseInt(times / 60 % 60);
+			m = m < 10 ? '0' + m : m;
+			min.innerHTML = m;
+			var s = parseInt(times % 60);
+			s = s < 10 ? '0' + s : s;
+			second.innerHTML = s;
+		}
+	</script>
+</html>

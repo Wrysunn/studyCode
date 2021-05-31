@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background: url(../电影/何以为家.png) center top;
+		}
+		img {
+			width: 200px;
+			height: 120px;
+		}
+		ul {
+			height: 120px;
+			width: 850px;
+			margin: 100px auto;
+			background: #fff;
+		}
+		ul li {
+			list-style: none;
+			float: left;
+			margin-left: 10px;
+		}
+	</style>
+	<body>
+		<ul>
+			<li><img src="../电影/何以为家.png" alt="" /></li>
+			<li><img src="../电影/教父.png" alt="" /></li>
+			<li><img src="../电影/绿皮书.png" alt="" /></li>
+			<li><img src="../电影/触不可及.png" alt="" /></li>
+		</ul>
+	</body>
+
+	<script>
+		var imgs = document.querySelector('ul').querySelectorAll('img')
+		for (var i = 0; i < imgs.length; i++) {
+      imgs[i].onclick = function(){
+        document.body.style.backgroundImage = "url("+this.src+")"
+      }
+    }
+	</script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		/* * {
+			margin: 0;
+			padding: 0;
+		}
+		.search {
+			width: 249px;
+			position: relative;
+			height: 200px;
+			margin: 100px 200px;
+		}
+		.con {
+			position: absolute;
+			display: none;
+			width: 164px;
+			top: -32px;
+			border: 1px solid #e1e1e1;
+			box-shadow: 0 1px 4px #e1e1e1;
+			line-height: 30px;
+			font-size: 18px;
+		}
+		.con::before {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: 30px;
+			left: 15px;
+			border: 8px solid #e1e1e1;
+			border-color: #fff transparent transparent;
+		}
+		input {
+			margin-top: 9px;
+		} */
+	</style>
+	<body>
+		<!-- <div class="search">
+			<div class="con"></div>
+			<input type="text" />
+		</div> -->
+    <button>停止</button>
+		<script>
+			// var con = document.querySelector('.con')
+			// var txt = document.querySelector('input')
+			// txt.addEventListener('keyup', function () {
+			// 	if (this.value == '') {
+			// 		con.style.display = 'none'
+			// 	} else {
+			// 		con.style.display = 'block'
+			// 		con.innerHTML = this.value
+			// 	}
+			// })
+			// txt.addEventListener('blur', function () {
+			// 	con.style.display = 'none'
+			// })
+			// txt.addEventListener('focus', function () {
+			// 	if (this.value == '') {
+			// 		con.style.display = 'none'
+			// 	} else {
+			// 		con.style.display = 'block'
+			// 	}
+			// })
+      var btn =document.querySelector("button");
+     var times= setTimeout(function(){
+        console.log(111111);
+      },3000)
+      btn.addEventListener("click",function(){
+        clearTimeout(times)
+      })
+		</script>
+	</body>
+</html>

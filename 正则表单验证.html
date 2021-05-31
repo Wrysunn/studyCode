@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .green{
+    color: green;
+  }
+  .wrong{
+    color: red;
+  }
+</style>
+<body>
+  <input type="text"><span>请输入用户名</span>
+</body>
+<script>
+  var reg = /^[a-zA-Z0-9_-]{3,6}$/;
+
+  var ipu =document.querySelector("input");
+  var span =document.querySelector("span");
+
+  // ipu.onblur = function(){
+  //   if(reg.test(this.value)){
+  //     span.innerHTML = "输入正确";
+  //     span.className = "green";
+  //   }else{
+  //     span.innerHTML = "输入不正确";
+  //     span.className = "wrong";
+  //   }
+  // }
+  // ipu.addEventListener("blur",function(){
+  //   if(reg.test(this.value)){
+  //     span.innerHTML = "输入正确";
+  //     span.className = "green";
+  //   }else{
+  //     span.innerHTML = "输入不正确";
+  //     span.className = "wrong";
+  //     this.nextElementSibling
+  //   }
+  // })
+  // const fn = () => {
+  //   console.log(123);
+  // }
+  // fn();
+  // let [a,b,c] = [1,2]
+  // console.log(a);
+  // console.log(b);
+  // console.log(c);
+
+  // function* fn(){
+
+  //   console.log(11);
+  //   yield 2;
+  //   console.log(22);
+
+  // }
+  // let a = fn();
+  // console.log(a.next());
+
+  new Promise(function(resolve,reject){
+    
+  })
+</script>
+</html>

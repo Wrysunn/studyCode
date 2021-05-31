@@ -1,0 +1,241 @@
+.main{
+  width: 980px;
+  height: 455px;
+  margin-left: 220px;
+  margin-top: 10px;
+}
+.focus{
+  position: relative;
+  float: left;
+  width: 721px;
+  height: 100%;
+  background-color: plum;
+  overflow: hidden;
+}
+.focus ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600%;
+}
+.focus ul li{
+  float: left;
+}
+.focus ul li img{
+  width: 721px;
+  height: 456px;
+}
+.arrow-l,
+.arrow-r{
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  top: 50%;
+  font-size: 25px;
+  color: #fff;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 2;
+}
+.arrow-r{
+  right: 0;
+}
+.circle{
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
+}
+.circle li{
+  float: left;
+  border: 1px solid #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.current{
+  background-color: #fff;
+}
+.newsflash{
+  float: right;
+  width: 250px;
+  height: 100%;
+}
+.news{
+  height: 165px;
+  border: 1px solid #e4e4e4;
+}
+.news-hd{
+  height: 33px;
+  border-bottom: 1px dotted #e4e4e4;
+  padding: 0 15px;
+  line-height: 33px;
+}
+.news-hd h5{
+  float: left;
+  font-size: 14px;
+}
+.news-hd .more{
+  float: right;
+}
+.news-hd .more::after{
+  content: '\e920';
+  font-family: 'icomoon';
+}
+.news-bd{
+  padding: 5px 15px 0;
+}
+.news-bd li{
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.lifeservice{
+  height: 209px;
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+  overflow: hidden;
+}
+.lifeservice ul{
+  width: 252px;
+}
+.lifeservice ul li{
+  float: left;
+  width: 63px;
+ height: 71px;
+ /* background-color: aliceblue; */
+ border-right: 1px solid #e4e4e4;
+ border-bottom: 1px solid #e4e4e4;
+ text-align: center;
+}
+.lifeservice ul li i{
+  margin-top: 15px;
+  display: inline-block;
+  width: 24px;
+  height: 27px;
+}
+.lifeservice .i1{
+  background: url(../image/icons.png) no-repeat -15px -15px;
+}
+.lifeservice .i2{
+  background: url(../image/icons.png) no-repeat -80px -15px;
+}
+.lifeservice .i3{
+  background: url(../image/icons.png) no-repeat -141px -15px;
+}
+.lifeservice .i4{
+  background: url(../image/icons.png) no-repeat -206px -15px;
+}
+.lifeservice .i5{
+  background: url(../image/icons.png) no-repeat -15px -88px;
+}
+.lifeservice .i6{
+  background: url(../image/icons.png) no-repeat -80px -88px;
+}
+.lifeservice .i7{
+  background: url(../image/icons.png) no-repeat -141px -88px;
+}
+.lifeservice .i8{
+  background: url(../image/icons.png) no-repeat -206px -88px;
+}
+.lifeservice .i9{
+  background: url(../image/icons.png) no-repeat -15px -160px;
+}
+.lifeservice .i10{
+  background: url(../image/icons.png) no-repeat -80px -160px;
+}
+.lifeservice .i11{
+  background: url(../image/icons.png) no-repeat -141px -160px;
+}
+.lifeservice .i12{
+  background: url(../image/icons.png) no-repeat -206px -160px;
+}
+.bargain{
+  margin-top: 6px;
+}
+.recom{
+  margin-top: 12px;
+  height: 163px;
+  background-color: #ebebeb;
+}
+.recom_bd ul li img{
+  width: 248px;
+  height: 163px;
+}
+.recom_bd ul li{
+  position: relative;
+  float: left;
+}
+.recom_bd ul li:nth-child(-n+3)::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 1px;
+  height: 145px;
+  background-color: #ddd;
+}
+.box_hd{
+  height: 30px;
+  border-bottom: 2px solid #c81623;
+  line-height: 30px;
+}
+.box_hd h3{
+  float: left;
+  color: #c81623;
+}
+.box_hd .tab_list{
+  float: right;
+}
+.box_hd .tab_list li{
+  float: left;
+}
+.box_hd .tab_list li a{
+  margin: 0 12px;
+}
+.floor .w{
+  margin-top: 30px;
+}
+.box_bd{
+  height: 361px;
+  /* background-color: #c81623; */
+}
+.tab_list_item>div{
+  float: left;
+  height: 361px;
+}
+.col_210{
+  background-color: #f9f9f9;
+  width: 210px;
+  text-align: center;
+}
+.col_210 ul li{
+  border-bottom: 1px solid #ccc;
+  float: left;
+  width: 85px;
+  height: 34px;
+  text-align: center;
+  margin: 0 10px 0 10px;
+  line-height: 33px;
+}
+.col_329{
+  float: left;
+  width: 329px;
+}
+.col_221{
+  width: 221px;
+  border-left: 1px solid #ededed;
+}
+.col_219{
+  width: 219px;
+}
+.dd{
+  display: block;
+  border-bottom: 1px solid #ebebeb;
+}
